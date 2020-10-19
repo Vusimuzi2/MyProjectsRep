@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".BankingDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="176dp">
+
+        <LinearLayout
+            android:id="@+id/LinearAccountNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="120dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAccountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Number :"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="210dp" />
+
+            <EditText
+                android:id="@+id/edAccountNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:hint="Enter account  number here"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearBankName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/LoginDetails"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvBankName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bank name:"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="210dp" />
+
+            <EditText
+                android:id="@+id/edBankName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:hint="Enter branch name  here"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearBranchCode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvBranchCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Branch Code :"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="210dp" />
+
+            <EditText
+                android:id="@+id/edBranchCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:hint="Enter branch code here"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearAccountType"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAccountType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Type :"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="210dp" />
+
+            <EditText
+                android:id="@+id/edAccountType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:hint="Enter branch code here"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearButtonContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="359dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:background="@color/colorAccent"
+                android:onClick="navigate"
+                android:text="Continue" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
